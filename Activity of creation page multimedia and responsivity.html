@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head> 
-    <title>Page HTML first attempt</title>
+    <title>Page HTML Responsive with Multimedia</title>
    <meta charset="UTF-8"> 
    <meta name="Thalis Brum" content="First HTML Page">
    <meta name="viewport" content="width=device-width", initial-scale="1.0">
@@ -14,8 +14,17 @@
         <img src="https://cdn.pixabay.com/photo/2022/07/08/05/38/freelance-work-7308505_1280.png" alt="Ilustração profissional FullStack" width="300" height="150"></p>
 
     <!--Imagens com responsividade com atributos srcset e sizes-->
+        
+    <p>
         <img
             src="images/reguas-pequeno-640x480.jpg" 
-            srcset="reguas-pequeno-640x480.jpg 640w">
+            srcset="images/reguas-pequeno-640x480.jpg 640w"
+            sizes="(max-width: 700px) 100vw, 640px"
+            alt="Imagens de Réguas"
+            width="640", height="480">
+    </p>
+    
+
 
 </body>
+</html>
