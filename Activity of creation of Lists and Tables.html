@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-pt"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de criação de Listas e Tabelas</title>
+</head>
+<body>
+    <h1>Atividade de criação de Listas e Tabelas</h1>
+    <section>
+        //Lista não ordenada
+        <h2>Frutas</h2>
+        <ul>
+            <li>Maçã</li>
+            <li>Laranja</li>
+            <li>Pêra</li>
+            <li>Abacate</li>
+            <li>Banana</li>
+            <li>Uvas
+                <ul>Merlot</ul>
+                <ul>Malbec</ul>
+                <ul>Sauvignon Blanc</ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        // Lista Ordenada
+        <h2>Como fazer um chá passo a passo</h2>
+        <ol>
+            <li>Ferva 250 ml de água;</li>
+            <li>Em uma chávena, coloque a saqueta do chá de sua preferência;</li>
+            <li>Deite a água fervida na chávena;</li>
+            <li>Deixe infusionar de 3 a 5 minutos;</li>
+            <li>Retire o sachê, se preferir adoce a seu gosto e sirva.</li>
+        </ol>
+        <i>-» Lista com atributo reversed </i>
+        <ol reversed>
+            <li>Retire o sachê, se preferir adoce a seu gosto e sirva.</li>
+            <li>Deixe infusionar de 3 a 5 minutos;</li>
+            <li>Deite a água fervida na chávena;</li>
+            <li>Em uma chávena, coloque a saqueta do chá de sua preferência;</li>
+            <li>Ferva 250 ml de água;</li>
+        </ol reversed>
+    </section>
+    <section>
+        //Listas de definição
+        <h2>Termos WEB</h2>
+            <dl>
+                <dt>HTML</dt>
+                    <dd>Linguagem padrão para criação de páginas da WEB.</dd>
+                    <dd>Sigla para HyperText Markup Language</dd>
+                
+                <p><dt>CSS</dt>
+                    <dd>Linguagem que define estilos e aparência de páginas da WEB.</dd>
+                    <dd>Sigla para Cascading Style Sheets</dd>
+                </p>
+                <p><dt>JavasCript</dt>
+                    <dd>Linguagem de programação usada para criar páginas da WEB interativas.</dd>
+                </p>
+            </dl>
+    </section>
+    <section>
+        // Tabelas
+        <h2>Horários de Aula</h2>
+        <table>
+            <caption>Horário Semanal de Aulas</caption>
+            <colgroup>
+                <col span="1" style="width: 20%;">
+                <col span="1" style="width: 40%;">
+                <col span="1" style="width: 40%;">
+            </colgroup>
+            <thead>
+             <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Disciplina</th>
+                <th scope="col">Hora</th>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Segunda</td>
+                <td>Matemática</td>
+                <td>09:00–10:30</td>
+            </tr>
+            <tr>
+                <td scope="row">Terça</td>
+                <td>Física</td>
+                <td>11:00–12:30</td>
+            </tr>
+            <tr class="destaque">
+                <td scope="row">Quarta</td>
+                <td>Programação Web</td>
+                <td>14:00–15:30</td>
+            </tr>
+        </tbody>
+            <tfoot>
+            <tr class="destaque">
+                <td colspan="2">Total de Aulas</td>
+                <td>3</td>
+            </tr>
+            </tfoot>
+    </table>
+    </section> 
+</body>
+</html>

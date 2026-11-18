@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Page HTML first attempt</title>
+   <meta charset="UTF-8"> 
+   <meta name="Thalis Brum" content="First HTML Page">
+   <meta name="viewport" content="width=device-width", initial-scale="1.0">
+</head>
+<body>Hi, my name is Thalis Brum and this is the first time i've been written a HTML code.</body>
+
+<!--------- Estudo de tags --------->
+<body>
+
+    <header> <b>< header ></header></b> define o cabeçalho de uma secção ou página
+    <h1>Este é um exemplo do header. </h1> </header>
+    <section> <b>< section ></section></b> representa uma secção genérica de conteúdo, que pode conter múltiplos artigos ou outras divisões.
+        <h3>Sobre o Thalis</h3>
+        <p>Atualmente estudante de Web Development Full Stack</p>    
+    </section>    
+    <footer> <b>< footer > </b> define o rodapé da página
+    <p> 2026 Todos os direitos reservados, este é um exemplo do footer </p></footer>
+    <----- Tags de formatação ----->
+
+    <p><b> < b >: aplica negrito ao texto, usado para destacar partes específicas.</b></p>
+    <p><i>< i ></i>: aplica itálico ao texto, geralmente usado para nomes de obras, estrangeirismos ou ênfase leve.</i></p>
+    <p><strong>< strong >: indica ênfase forte ou importância, geralmente renderizado como negrito.</strong></p>
+    <p><em>< em >: indica ênfase, geralmente renderizado como itálico.</em></p>
+    <p><mark>< mark >: destaca o texto, geralmente com um fundo colorido.</mark></p>
+    <p><small>< small >: reduz o tamanho do texto, usado para avisos ou notas secundárias.</small></p>
+    
+<!Evento de rato (onclick, onmouseover, onmouseout):>
+        <p><button onclick="alert('Botão clicado!')" > Clique Aqui </button></p>
+        <div onmouseover="this.style.backgroundColor='yellow'" onmouseout="this.style.backgroundColor=''">Passe o mouse aqui</div>
+    
+<!Evento de teclado (onkeydown, onkeyup, onkeypress):>    
+        <input type="text" onkeydown="alert('Tecla pressionada!')">
+        
+<!Evento de formulário (onsubmit, onreset, onchange, oninput):>
+        <form onsubmit="alert('Formulário submetido!'); return false;">
+	    <input type="text" onchange="alert('Valor alterado!')">
+	    <input type="submit" value="Submeter"></form>
+<!Evento de janela (onload, onresize, onscroll):>
+        <body onload="alert('Página carregada!')">
+	<div style="height: 200px; overflow-y: scroll;" onscroll="alert('Página rolada!')">
+	    <div style="height: 400px;">Conteúdo rolável</div>
+	</div>
+    <p>is interesting this events, but in mode with i've been implemented it became annoying. 
+        But everything  here is a test, so i improve them with the time.</p>
+    <p><style>
+	  ul.fancy-list {
+	    list-style-type: none;
+	    padding: 0;
+	    margin: 0;
+	  }
+	  ul.fancy-list li {
+	    background: #f3f3f3;
+	    margin: 5px 0;
+	    padding: 10px;
+	    border-radius: 5px;
+	    position: relative;
+	  }
+	  ul.fancy-list li:before {
+	    content: '?';
+	    position: absolute;
+	    left: -20px;
+	    top: 10px;
+	    color: rgb(19, 229, 19);
+	  }
+	</style>
+	<ul class="fancy-list">
+	  <li>Item 1</li>
+	  <li>Item 2</li>
+	  <li>Item 3</li>
+	</ul></p>
+   
+    <p><ol>
+	  <li>Primeiro item</li>
+	  <li>Segundo item</li>
+	  <li>Terceiro item</li>
+	</ol></p>
+	<!Tabelas estilo bloco>
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Nome</th>
+	      <th>Idade</th>
+	      <th>Profissão</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td data-label="Nome">Maria</td>
+	      <td data-label="Idade">28</td>
+	      <td data-label="Profissão">Engenheira</td>
+	    </tr>
+	    <!-- Outras linhas -->
+	  </tbody>
+	</table>
+	<table>
+	  <tr>
+	    <th scope="col">Nome</th>
+	    <th scope="col">Idade</th>
+	    <th scope="col">Profissão</th>
+	  </tr>
+	  <tr>
+	    <td headers="name">Maria</td>
+	    <td headers="age">28</td>
+	    <td headers="profession">Engenheira</td>
+	  </tr>
+	</table>
+				<table>
+	  <caption>Dados dos Funcionários</caption>
+	  <tr>
+	    <th scope="col">Nome</th>
+	    <th scope="col">Idade</th>
+	    <th scope="col">Profissão</th>
+	  </tr>
+	  <tr>
+	    <td headers="name">Maria</td>
+	    <td headers="age">28</td>
+	    <td headers="profession">Engenheira</td>
+	  </tr>
+	</table>
+</body>
+</html> 
